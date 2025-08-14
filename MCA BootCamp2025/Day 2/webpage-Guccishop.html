@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dior Shop</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: gray;
+            margin: 0;
+            padding: 15px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;    
+            padding: 10px;
+        }
+
+        .header ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header ul li {
+            margin: 0 10px;
+        }
+
+        .header ul li a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 5px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .play {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            flex: 1;
+        }
+
+        .cards {
+            width: 250px;
+            background: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .cards img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        li a:hover {
+            background-color: gray;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 10px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+            color: #f4f4f4;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+               align-items: center;
+        }
+      .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Dior Shop</h1>
+    <nav>
+        <div class="header">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#women">Women Category</a></li>
+                <li><a href="#men">Men Category</a></li>
+                <li><a href="trial.html" id="loginLink">Login</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="search" placeholder="Search">
+                <button>Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero" id="home">
+        <h2>Welcome to Dior Shop</h2>
+        <p>Find your perfect outfit today!</p>
+    </div>
+
+    <div class="play">
+        <div class="cards">
+            <img src="https://img-new.orientpalms.com/IMG/article8895/Dior_HC_S23_002-resp2400v.jpg" alt="Dior Dress">
+            <p>Song Gown</p>
+        </div>
+        <div class="cards">
+            <img src="https://media1.popsugar-assets.com/files/thumbor/adUW7Ymz37q1fiTi_pLqylD3kaA/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/02/26/757/n/1922564/a32ac30a8d6d78f5_Dior_RF19_0689/i/Dior-Runway-Fall-2019.jpg" alt="Dior Runway">
+            <p>Full over Coat Dress</p>
+        </div>
+        <div class="cards">
+            <img src="https://www.adversus.nl/magazine/wp-content/uploads/2024/09/DIOR_RTW_SS25_look_56_resize.jpg" alt="Dior Outfit">
+            <p>Coat Model co-ord Dress</p>
+        </div>
+        <div class="cards">
+            <img src="https://media.tatler.com/photos/62c2fd69d000a4334ed9c516/master/w_1600%2Cc_limit/Dior_040722_25_is1_0433.jpg" alt="Dior Fashion">
+            <p>Full black Dress</p>
+        </div>
+        <div class="cards">
+            <img src="https://img-new.orientpalms.com/IMG/article8895/Dior_HC_S23_002-resp2400v.jpg" alt="Dior Dress">
+            <p>Song Gown</p>
+        </div>
+        <div class="cards">
+            <img src="https://media1.popsugar-assets.com/files/thumbor/adUW7Ymz37q1fiTi_pLqylD3kaA/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/02/26/757/n/1922564/a32ac30a8d6d78f5_Dior_RF19_0689/i/Dior-Runway-Fall-2019.jpg" alt="Dior Runway">
+            <p>Full over Coat Dress</p>
+        </div>
+        <div class="cards">
+            <img src="https://www.adversus.nl/magazine/wp-content/uploads/2024/09/DIOR_RTW_SS25_look_56_resize.jpg" alt="Dior Outfit">
+            <p>Coat Model co-ord Dress</p>
+        </div>
+        <div class="cards">
+            <img src="https://media.tatler.com/photos/62c2fd69d000a4334ed9c516/master/w_1600%2Cc_limit/Dior_040722_25_is1_0433.jpg" alt="Dior Fashion">
+            <p>Full black Dress</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>ABOUT US</h4>
+                <p>Dior Shop brings you the latest trends in luxury fashion, blending style and elegance.</p>
+            </div>
+            <div class="footer-section">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#men">Men</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <p>Email: support@diorshop.com</p>
+                <p>Phone: +91 6369787689</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> Dior Shop | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
