@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        #container{
+            transition-duration: 1s;
+            position: relative;
+            background-image:url('./assets/Nature.jpg');
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            
+        }
+
+          .cards >p{
+            background-color: rgb(228, 204, 163);
+        }
+         h1 {
+            text-align: center;
+            background-color: palevioletred;
+            margin: 0;
+            padding: 15px;
+        }
+
+        nav {
+            background-color:white;
+            color: white;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;    
+            padding: 10px;
+        }
+
+        .header ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .header ul li {
+            margin: 0 10px;
+            font-weight:bolder;
+        }
+
+        .header ul li a {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+    
+        }
+
+        .search-bar input {
+            padding: 5px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+
+         
+        .Mini{
+        
+            position: absolute;
+            display: flex;
+            bottom: 30px;
+            right: 80px;
+           
+        }
+
+         .Mini img{
+            height: 40;
+            width: 130px;
+            opacity: 0.5;
+        }
+        .Mini img:hover{
+            border:3px solid pink;
+            scale: 1.1;
+            opacity: 1; 
+            cursor: pointer;
+        }
+
+        .play {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 40px 20px;
+        background-color: rgba(255, 255, 255, 0.74);
+        }
+
+    
+
+        .cards {
+        background-color: #fff;
+        color: #000;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+       }
+
+    .cards:hover {
+      transform: translateY(-5px);
+    }
+
+    .cards img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+   
+
+        footer {
+            background-color: powderblue;
+            color: black;
+            padding: 20px 10px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 10px;
+            color:palevioletred;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        
+        }
+
+        .footer-section ul li a {
+            color: black;
+            text-decoration: none;
+               align-items: center;
+        }
+      .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #555;
+            padding-top: 10px;
+            font-size: 14px;
+        }
+
+               @media screen and (min-width:750px){
+
+           
+     .header ul{
+         
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 10px;
+            
+        }
+    }
+
+      .icon{
+            display: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Japan Pureisu</h1>
+    <nav>
+        <div class="header">
+              <div class="icon">
+
+            <i class="fa-solid fa-bars"></i>
+        </div>
+            <ul>
+                <li><a href="#Explore">Explore</a></li>
+                <li><a href="#Seasons">Season</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Stories">Stories</a></li>
+                <li><a href="login.html" id="loginLink">Login</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="search" placeholder="Search">
+                <button>Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="container">
+        <!-- <div class="arrow">
+            <img onclick="prev()" id="arrow1"src="./assets/arrow1.png">
+            <img onclick="next()" id="arrow2"src="./assets/arrow1.png">
+
+        </div> -->
+
+    </div>
+    <div class="Mini">
+        <img class="img active" onclick="change(0)" src="./assets/Nature1.jpg"alt="LOADING">
+        <img class="img" onclick="change(1)" src="./assets/Nature2.jpg"alt="LOADING">
+        <img class="img" onclick="change(2)" src="./assets/Nature3.jpg"alt="LOADING">
+        <img class="img" onclick="change(3)" src="./assets/Nature4.jpg"alt="LOADING">
+        <img class="img" onclick="change(4)" src="./assets/Nature5.jpg"alt="LOADING">
+    </div>
+
+</div>
+
+    <script src="./changing.js"></script>
+    
+    <div class="play">
+        <div class="cards">
+            <img src="https://media.cntraveler.com/photos/58d2c0a97e623821b9f3181d/master/pass/yoshinoyama--japan-GettyImages-488852217.jpg" alt="Shirakawa-go">
+            <p><h2>Shirakawa-go</h2></p>
+            <p>Nestled in the misty mountains of Gifu, Shirakawa-go whispers tales of timeless tradition beneath steep thatched roofs.Each season paints its own poetry snow-laced silence, golden harvests, and spring’s gentle bloom.</p>
+        </div>
+        <div class="cards">
+            <img src="https://cdn.thecoolist.com/wp-content/uploads/2021/02/Most-Beautiful-Places-in-Japan.jpg" alt="Sannenzaka">
+            <p><h2>Sannenzaka</h2></p>
+            <p>A historic pedestrian street in the Higashiyama district of Kyoto, Japan. It's famous for its traditional wooden buildings, stone-paved slope, and cherry blossom trees that bloom beautifully in spring</p>
+        </div>
+        <div class="cards">
+            <img src="https://i0.wp.com/www.tommyooi.com/wp-content/uploads/2013/11/Kinkakuji.jpeg?fit=1600%2C1200&ssl=1" alt="Golden Pavilion">
+            <p><h2>Golden Pavilion</h2></p>
+            <p>It's one of the most iconic and visually stunning Zen Buddhist temples in the country,
+         especially during spring and autumn when the surrounding scenery enhances its beauty.</p>
+        </div>
+        <div class="cards">
+            <img src="https://images.saymedia-content.com/.image/t_share/MTc1MTE1ODU4ODI4OTkzNjMx/top-10-most-popular-tourist-attractions-in-japan-2013.png" alt="Chureito Pagoda">
+            <p><h2>Chureito Pagoda</h2></p>
+            <p>It’s one of the most iconic and photographed spots in the country, especially when framed by cherry blossoms in spring or fiery foliage in autumn</p>
+        </div>
+        <div class="cards">
+            <img src="https://www.trafalgar.com/real-word/wp-content/uploads/sites/3/2018/01/Tokyo-Skyline-www.istockphoto.com_gb_photo_tokyo-japan-city-skyline-gm504317383-44289846-SeanPavonePhoto.jpg" alt="Tokyo Tower">
+            <p><h2>Tokyo Tower</h2></p>
+            <p>The tower is illuminated at night, often in orange or white depending on the season or event.- From its observation decks, you get panoramic views of Tokyo, and on clear days, even Mount Fuji.</p>
+        </div>
+        <div class="cards">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15b154a53c86.34348753.jpeg" alt="Himeji Castle">
+            <p><h2>Himeji Castle</h2></p>
+            <p>Japan’s “White Heron,” soars with elegance and centuries-old samurai history.Surrounded by cherry blossoms, its pristine white walls and layered roofs evoke timeless beauty.</p>
+        </div>
+        <div class="cards">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.jjuVWEnA8PNN3a_mRwdoDAHaE8?pid=Api&P=0&h=180" alt="Nakameguro">
+            <p><h2>Nakameguro</h2></p>
+            <p>Petals drift like whispers over Meguro’s quiet stream, aglow beneath lantern-lit skies.Spring lingers briefly here, where beauty and twilight softly entwine.</p>
+        </div>
+        <div class="cards">
+            <img src="https://ci-prod.imgix.net/upload/galeriadeimagens/00206959.jpg" alt="Senso-ji Temple">
+            <p><h2>Senso-ji Temple</h2></p>
+            <p>Senso-ji Temple in Asakusa blends ancient tradition with vibrant cherry blossoms and iconic lanterns.Its grand red gate and golden pagoda welcome visitors into Tokyo’s spiritual and cultural heart.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>ABOUT US</h4>
+                <p>🌸 Nature Japan celebrates the country’s breathtaking landscapes through curated, eco-friendly travel experiences.
+🌿 Discover sacred trails, seasonal beauty, and authentic connections with Japan’s natural heritage.
+</p>
+            </div>
+            <div class="footer-section">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Seasonal Highlights">Seasonal Highlights</a></li>
+                    <li><a href="#Destination">Destination</a></li>
+                    <li><a href="#Travel Tips">Travel Tips</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <p>Email: support@JapanPureisu.com</p>
+                <p>Phone: +91 6369787689</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> Japan Pureisu | All Rights Reserved</p>
+        </div>
+    </footer>
+    
+  
+    
+    
+</body>
+</html>
